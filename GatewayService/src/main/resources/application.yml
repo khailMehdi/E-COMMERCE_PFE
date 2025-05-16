@@ -11,6 +11,11 @@ spring:
             uri: http://localhost:8883
             predicates:
               - Path=/orders/**
+          - id: payment-service
+            uri: http://localhost:8884
+            predicates:
+              - Path=/payments/**
+            
     discovery:
       enabled: true
 server:

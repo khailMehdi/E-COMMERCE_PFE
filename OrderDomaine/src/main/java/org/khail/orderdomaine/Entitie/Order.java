@@ -37,5 +37,7 @@ public class Order {
     @LastModifiedDate
     @Column(insertable = false)
     private LocalDateTime lastModifiedDate;
+    @Transiant
+    private Customer customer
 
 }

@@ -22,7 +22,7 @@ public class OrderController {
     }
     @PostMapping("/orders")
     public Order addOrder(@PathVariable Order order){
-        return orderService.addOrder(order);
+        return orderService.createOrder(order);
     }
     @DeleteMapping("/orders/{id}")
     public void deleteOrder(@PathVariable int id){

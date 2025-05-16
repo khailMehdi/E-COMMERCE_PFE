@@ -10,6 +10,11 @@ import java.util.List;
 @Transactional
 public class OrderServiceImpl implements OrderService {
     private OrederRepository orderRepository;
+    private CustomerServiceClient customerServiceClient;
+    public OrderServiceImpl(OrederRepository orderRepository, CustomerServiceClient customerServiceClient) {
+        this.orderRepository = orderRepository;
+        this.customerServiceClient = customerServiceClient;
+    }
     public OrderServiceImpl(OrederRepository orderRepository) {
         this.orderRepository = orderRepository;
     }

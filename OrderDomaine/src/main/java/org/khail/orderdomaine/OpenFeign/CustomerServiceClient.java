@@ -9,6 +9,6 @@ import java.util.List;
 @FeignClient(name="customer-service")
 public interface CustomerServiceClient {
     @GetMapping("/customer/{id}")
-    List<Customer> getCustomersByIds(String id);
+    Customer getCustomersById(String id);
 
 }
